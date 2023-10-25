@@ -1,0 +1,732 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>HML.ComplexityPropertys</name>
+    </assembly>
+    <members>
+        <member name="T:HML.TBPadding">
+             <summary>
+            上下内边距 
+             </summary>
+        </member>
+        <member name="P:HML.TBPadding.All">
+            <summary>
+            全部
+            </summary>
+        </member>
+        <member name="P:HML.TBPadding.Top">
+            <summary>
+            上边内边距
+            </summary>
+        </member>
+        <member name="P:HML.TBPadding.Bottom">
+            <summary>
+            下边内边距
+            </summary>
+        </member>
+        <member name="M:HML.TBPadding.#ctor(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="all">全部边距</param>
+        </member>
+        <member name="M:HML.TBPadding.#ctor(System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="top">上边内边距</param>
+            <param name="bottom">下边内边距</param>
+        </member>
+        <member name="M:HML.TBPadding.op_Equality(HML.TBPadding,HML.TBPadding)">
+            <summary>
+            判断两个边距对象设置是否一样
+            </summary>
+            <param name="rc1"></param>
+            <param name="rc2"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HML.TBPadding.op_Inequality(HML.TBPadding,HML.TBPadding)">
+            <summary>
+            判断两个边距对象设置是否不一样
+            </summary>
+            <param name="rc1"></param>
+            <param name="rc2"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HML.TBPadding.GetHashCode">
+            <summary>
+            获取该对象的哈希值（参考源码）
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HML.TBPadding.Equals(System.Object)">
+            <summary>
+            判断是否和该对象的引用是一样
+            </summary>
+            <param name="other"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HML.TBPadding.ToString">
+            <summary>
+            把该对象转换成字符串
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HML.TBPadding.RotateTop(System.Int32,System.Int32)">
+            <summary>
+            计算哈希值（参考源码）
+            </summary>
+            <param name="value"></param>
+            <param name="nBits"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HML.TBPadding.ShouldSerializeAll">
+            <summary>
+            是否应该使用All设置初始化对象
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:HML.TBPaddingConverter">
+            <summary>
+            上下内边距转换器
+            </summary>
+        </member>
+        <member name="M:HML.TBPaddingConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)">
+            <summary>
+            字符串转对象
+            </summary>
+            <param name="context"></param>
+            <param name="culture"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HML.TBPaddingConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)">
+            <summary>
+            对象转字符串
+            </summary>
+            <param name="context"></param>
+            <param name="culture"></param>
+            <param name="value"></param>
+            <param name="destinationType"></param>
+            <returns></returns>
+        </member>
+        <member name="T:HML.TBMargin">
+             <summary>
+            上下外边距 
+             </summary>
+        </member>
+        <member name="P:HML.TBMargin.All">
+            <summary>
+            全部
+            </summary>
+        </member>
+        <member name="P:HML.TBMargin.Top">
+            <summary>
+            上边外边距
+            </summary>
+        </member>
+        <member name="P:HML.TBMargin.Bottom">
+            <summary>
+            下边外边距
+            </summary>
+        </member>
+        <member name="M:HML.TBMargin.#ctor(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="all">全部边距</param>
+        </member>
+        <member name="M:HML.TBMargin.#ctor(System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="top">上边外边距</param>
+            <param name="bottom">下边外边距</param>
+        </member>
+        <member name="M:HML.TBMargin.op_Equality(HML.TBMargin,HML.TBMargin)">
+            <summary>
+            判断两个边距对象设置是否一样
+            </summary>
+            <param name="rc1"></param>
+            <param name="rc2"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HML.TBMargin.op_Inequality(HML.TBMargin,HML.TBMargin)">
+            <summary>
+            判断两个边距对象设置是否不一样
+            </summary>
+            <param name="rc1"></param>
+            <param name="rc2"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HML.TBMargin.GetHashCode">
+            <summary>
+            获取该对象的哈希值（参考源码）
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HML.TBMargin.Equals(System.Object)">
+            <summary>
+            判断是否和该对象的引用是一样
+            </summary>
+            <param name="other"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HML.TBMargin.ToString">
+            <summary>
+            把该对象转换成字符串
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HML.TBMargin.RotateTop(System.Int32,System.Int32)">
+            <summary>
+            计算哈希值（参考源码）
+            </summary>
+            <param name="value"></param>
+            <param name="nBits"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HML.TBMargin.ShouldSerializeAll">
+            <summary>
+            是否应该使用All设置初始化对象
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:HML.TBMarginConverter">
+            <summary>
+            上下外边距转换器
+            </summary>
+        </member>
+        <member name="M:HML.TBMarginConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)">
+            <summary>
+            字符串转对象
+            </summary>
+            <param name="context"></param>
+            <param name="culture"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HML.TBMarginConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)">
+            <summary>
+            对象转字符串
+            </summary>
+            <param name="context"></param>
+            <param name="culture"></param>
+            <param name="value"></param>
+            <param name="destinationType"></param>
+            <returns></returns>
+        </member>
+        <member name="T:HML.LRPadding">
+             <summary>
+            左右内边距 
+             </summary>
+        </member>
+        <member name="P:HML.LRPadding.All">
+            <summary>
+            全部
+            </summary>
+        </member>
+        <member name="P:HML.LRPadding.Left">
+            <summary>
+            左边内边距
+            </summary>
+        </member>
+        <member name="P:HML.LRPadding.Right">
+            <summary>
+            右边内边距
+            </summary>
+        </member>
+        <member name="M:HML.LRPadding.#ctor(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="all">全部边距</param>
+        </member>
+        <member name="M:HML.LRPadding.#ctor(System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="left">左边内边距</param>
+            <param name="right">右边内边距</param>
+        </member>
+        <member name="M:HML.LRPadding.op_Equality(HML.LRPadding,HML.LRPadding)">
+            <summary>
+            判断两个边距对象设置是否一样
+            </summary>
+            <param name="rc1"></param>
+            <param name="rc2"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HML.LRPadding.op_Inequality(HML.LRPadding,HML.LRPadding)">
+            <summary>
+            判断两个边距对象设置是否不一样
+            </summary>
+            <param name="rc1"></param>
+            <param name="rc2"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HML.LRPadding.GetHashCode">
+            <summary>
+            获取该对象的哈希值（参考源码）
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HML.LRPadding.Equals(System.Object)">
+            <summary>
+            判断是否和该对象的引用是一样
+            </summary>
+            <param name="other"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HML.LRPadding.ToString">
+            <summary>
+            把该对象转换成字符串
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HML.LRPadding.RotateLeft(System.Int32,System.Int32)">
+            <summary>
+            计算哈希值（参考源码）
+            </summary>
+            <param name="value"></param>
+            <param name="nBits"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HML.LRPadding.ShouldSerializeAll">
+            <summary>
+            是否应该使用All设置初始化对象
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:HML.LRPaddingConverter">
+            <summary>
+            左右内边距转换器
+            </summary>
+        </member>
+        <member name="M:HML.LRPaddingConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)">
+            <summary>
+            字符串转对象
+            </summary>
+            <param name="context"></param>
+            <param name="culture"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HML.LRPaddingConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)">
+            <summary>
+            对象转字符串
+            </summary>
+            <param name="context"></param>
+            <param name="culture"></param>
+            <param name="value"></param>
+            <param name="destinationType"></param>
+            <returns></returns>
+        </member>
+        <member name="T:HML.LRMargin">
+             <summary>
+            左右外边距 
+             </summary>
+        </member>
+        <member name="P:HML.LRMargin.All">
+            <summary>
+            全部
+            </summary>
+        </member>
+        <member name="P:HML.LRMargin.Left">
+            <summary>
+            左边外边距
+            </summary>
+        </member>
+        <member name="P:HML.LRMargin.Right">
+            <summary>
+            右边外边距
+            </summary>
+        </member>
+        <member name="M:HML.LRMargin.#ctor(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="all">全部边距</param>
+        </member>
+        <member name="M:HML.LRMargin.#ctor(System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="left">左边外边距</param>
+            <param name="right">右边外边距</param>
+        </member>
+        <member name="M:HML.LRMargin.op_Equality(HML.LRMargin,HML.LRMargin)">
+            <summary>
+            判断两个边距对象设置是否一样
+            </summary>
+            <param name="rc1"></param>
+            <param name="rc2"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HML.LRMargin.op_Inequality(HML.LRMargin,HML.LRMargin)">
+            <summary>
+            判断两个边距对象设置是否不一样
+            </summary>
+            <param name="rc1"></param>
+            <param name="rc2"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HML.LRMargin.GetHashCode">
+            <summary>
+            获取该对象的哈希值（参考源码）
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HML.LRMargin.Equals(System.Object)">
+            <summary>
+            判断是否和该对象的引用是一样
+            </summary>
+            <param name="other"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HML.LRMargin.ToString">
+            <summary>
+            把该对象转换成字符串
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HML.LRMargin.RotateLeft(System.Int32,System.Int32)">
+            <summary>
+            计算哈希值（参考源码）
+            </summary>
+            <param name="value"></param>
+            <param name="nBits"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HML.LRMargin.ShouldSerializeAll">
+            <summary>
+            是否应该使用All设置初始化对象
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:HML.LRMarginConverter">
+            <summary>
+            左右外边距转换器
+            </summary>
+        </member>
+        <member name="M:HML.LRMarginConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)">
+            <summary>
+            字符串转对象
+            </summary>
+            <param name="context"></param>
+            <param name="culture"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HML.LRMarginConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)">
+            <summary>
+            对象转字符串
+            </summary>
+            <param name="context"></param>
+            <param name="culture"></param>
+            <param name="value"></param>
+            <param name="destinationType"></param>
+            <returns></returns>
+        </member>
+        <member name="T:HML.MultidropSlidePoleAnchorMargin">
+             <summary>
+            MultidropSlide滑杆停靠外边距
+             </summary>
+        </member>
+        <member name="P:HML.MultidropSlidePoleAnchorMargin.All">
+            <summary>
+            全部
+            </summary>
+        </member>
+        <member name="P:HML.MultidropSlidePoleAnchorMargin.PoleTitle">
+            <summary>
+            滑杆为提示标题保留外边距
+            </summary>
+        </member>
+        <member name="P:HML.MultidropSlidePoleAnchorMargin.PoleStart">
+            <summary>
+            滑杆开始坐标外边距
+            </summary>
+        </member>
+        <member name="P:HML.MultidropSlidePoleAnchorMargin.PoleEnd">
+            <summary>
+            滑杆结束坐标外边距
+            </summary>
+        </member>
+        <member name="M:HML.MultidropSlidePoleAnchorMargin.#ctor(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="all">全部</param>
+        </member>
+        <member name="M:HML.MultidropSlidePoleAnchorMargin.#ctor(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="poleTitle">滑杆为提示标题保留外边距</param>
+            <param name="poleStart">滑杆开始坐标外边距</param>
+            <param name="poleEnd">滑杆结束坐标外边距</param>
+        </member>
+        <member name="M:HML.MultidropSlidePoleAnchorMargin.op_Equality(HML.MultidropSlidePoleAnchorMargin,HML.MultidropSlidePoleAnchorMargin)">
+            <summary>
+            判断两个滑杆停靠外边距对象设置是否一样
+            </summary>
+            <param name="arg1"></param>
+            <param name="arg2"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HML.MultidropSlidePoleAnchorMargin.op_Inequality(HML.MultidropSlidePoleAnchorMargin,HML.MultidropSlidePoleAnchorMargin)">
+            <summary>
+            判断两个滑杆停靠外边距对象设置是否不一样
+            </summary>
+            <param name="arg1"></param>
+            <param name="arg2"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HML.MultidropSlidePoleAnchorMargin.GetHashCode">
+            <summary>
+            获取该对象的哈希值（参考源码）
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HML.MultidropSlidePoleAnchorMargin.Equals(System.Object)">
+            <summary>
+            判断是否和该对象的引用是一样
+            </summary>
+            <param name="other"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HML.MultidropSlidePoleAnchorMargin.ToString">
+            <summary>
+            把该对象转换成字符串
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HML.MultidropSlidePoleAnchorMargin.RotateLeftTop(System.Int32,System.Int32)">
+            <summary>
+            计算哈希值（参考源码）
+            </summary>
+            <param name="value"></param>
+            <param name="nBits"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HML.MultidropSlidePoleAnchorMargin.ShouldSerializeAll">
+            <summary>
+            是否应该使用All设置初始化对象
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:HML.MultidropSlidePoleAnchorMarginConverter">
+            <summary>
+            MultidropSlide滑杆停靠外边距转换器
+            </summary>
+        </member>
+        <member name="M:HML.MultidropSlidePoleAnchorMarginConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)">
+            <summary>
+            字符串转对象
+            </summary>
+            <param name="context"></param>
+            <param name="culture"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HML.MultidropSlidePoleAnchorMarginConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)">
+            <summary>
+            对象转字符串
+            </summary>
+            <param name="context"></param>
+            <param name="culture"></param>
+            <param name="value"></param>
+            <param name="destinationType"></param>
+            <returns></returns>
+        </member>
+        <member name="T:HML.PointFR">
+            <summary>
+            表示在二维平面中定义点的浮点 x 和 y 坐标的有序对。
+            </summary>
+        </member>
+        <member name="M:HML.PointFR.ConvertFrom(System.Drawing.PointF)">
+            <summary>
+            System.Drawing.PointF 转换成 PointFR
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HML.PointFR.ConvertTo">
+            <summary>
+            PointFR 转换成 System.Drawing.PointF
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:HML.PointFRConverter">
+            <summary>
+            PointFR转换器
+            </summary>
+        </member>
+        <member name="T:HML.PropertyOrderConverter">
+            <summary>
+            对属性进行排序 
+            </summary>
+        </member>
+        <member name="M:HML.PropertyOrderConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)">
+            <summary>
+            当该属性为展开属性选型时，属性编辑器删除该属性的描述
+            </summary>
+            <param name="context"></param>
+            <param name="culture"></param>
+            <param name="value"></param>
+            <param name="destinationType"></param>
+            <returns></returns>
+        </member>
+        <member name="T:HML.PropertyOrderPair">
+            <summary>
+            属性排序 序号比较器
+            </summary>
+        </member>
+        <member name="P:HML.PropertyOrderPair.CategoryName">
+            <summary>
+            类别名称
+            </summary>
+        </member>
+        <member name="M:HML.PropertyOrderPair.#ctor(System.String,System.Single)">
+            <summary>
+            
+            </summary>
+            <param name="categoryName">类别名称</param>
+            <param name="order">序号</param>
+        </member>
+        <member name="T:HML.PropertyOrderAttribute">
+            <summary>
+            属性排序（升序）
+            </summary>
+        </member>
+        <member name="P:HML.PropertyOrderAttribute.Order">
+            <summary>
+            序号
+            </summary>
+        </member>
+        <member name="M:HML.PropertyOrderAttribute.#ctor(System.Single)">
+            <summary>
+            
+            </summary>
+            <param name="order">序号</param>
+        </member>
+        <member name="T:HML.RoundCorner">
+             <summary>
+            圆角
+             </summary>
+        </member>
+        <member name="P:HML.RoundCorner.All">
+            <summary>
+            全部
+            </summary>
+        </member>
+        <member name="P:HML.RoundCorner.LeftTop">
+            <summary>
+            左上角
+            </summary>
+        </member>
+        <member name="P:HML.RoundCorner.RightTop">
+            <summary>
+            右上角
+            </summary>
+        </member>
+        <member name="P:HML.RoundCorner.RightBottom">
+            <summary>
+            右下角
+            </summary>
+        </member>
+        <member name="P:HML.RoundCorner.LeftBottom">
+            <summary>
+            左下角
+            </summary>
+        </member>
+        <member name="M:HML.RoundCorner.#ctor(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="all">全部圆角</param>
+        </member>
+        <member name="M:HML.RoundCorner.#ctor(System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="leftTop">左上角</param>
+            <param name="rightTop">右上角</param>
+            <param name="rightBottom">右下角</param>
+            <param name="leftBottom">左下角</param>
+        </member>
+        <member name="M:HML.RoundCorner.op_Equality(HML.RoundCorner,HML.RoundCorner)">
+            <summary>
+            判断两个圆角对象设置是否一样
+            </summary>
+            <param name="rc1"></param>
+            <param name="rc2"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HML.RoundCorner.op_Inequality(HML.RoundCorner,HML.RoundCorner)">
+            <summary>
+            判断两个圆角对象设置是否不一样
+            </summary>
+            <param name="rc1"></param>
+            <param name="rc2"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HML.RoundCorner.GetHashCode">
+            <summary>
+            获取该对象的哈希值（参考源码）
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HML.RoundCorner.Equals(System.Object)">
+            <summary>
+            判断是否和该对象的引用是一样
+            </summary>
+            <param name="other"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HML.RoundCorner.ToString">
+            <summary>
+            把该对象转换成字符串
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HML.RoundCorner.RotateLeftTop(System.Int32,System.Int32)">
+            <summary>
+            计算哈希值（参考源码）
+            </summary>
+            <param name="value"></param>
+            <param name="nBits"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HML.RoundCorner.ShouldSerializeAll">
+            <summary>
+            是否应该使用All设置初始化对象
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:HML.RoundCornerConverter">
+            <summary>
+            圆角转换器
+            </summary>
+        </member>
+        <member name="M:HML.RoundCornerConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)">
+            <summary>
+            字符串转对象
+            </summary>
+            <param name="context"></param>
+            <param name="culture"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HML.RoundCornerConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)">
+            <summary>
+            对象转字符串
+            </summary>
+            <param name="context"></param>
+            <param name="culture"></param>
+            <param name="value"></param>
+            <param name="destinationType"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

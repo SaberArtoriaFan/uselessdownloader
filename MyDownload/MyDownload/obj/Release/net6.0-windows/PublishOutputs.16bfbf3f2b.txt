@@ -1,0 +1,10 @@
+D:\Program Files\VS\MyDownload\MyDownload\bin\Release\net6.0-windows\publish\MyDownload.exe
+D:\Program Files\VS\MyDownload\MyDownload\bin\Release\net6.0-windows\publish\MyDownload.dll
+D:\Program Files\VS\MyDownload\MyDownload\bin\Release\net6.0-windows\publish\MyDownload.deps.json
+D:\Program Files\VS\MyDownload\MyDownload\bin\Release\net6.0-windows\publish\MyDownload.runtimeconfig.json
+D:\Program Files\VS\MyDownload\MyDownload\bin\Release\net6.0-windows\publish\MyDownload.pdb
+D:\Program Files\VS\MyDownload\MyDownload\bin\Release\net6.0-windows\publish\Newtonsoft.Json.dll
+D:\Program Files\VS\MyDownload\MyDownload\bin\Release\net6.0-windows\publish\HML.ComplexityPropertys.dll
+D:\Program Files\VS\MyDownload\MyDownload\bin\Release\net6.0-windows\publish\HML.dll
+D:\Program Files\VS\MyDownload\MyDownload\bin\Release\net6.0-windows\publish\HML.xml
+D:\Program Files\VS\MyDownload\MyDownload\bin\Release\net6.0-windows\publish\HML.ComplexityPropertys.xml
